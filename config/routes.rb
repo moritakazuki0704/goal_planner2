@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'users/dash_board'
-  get 'users/unsubscribe'
-  root to: "homes#top"
+  root to: 'homes#top'
   devise_for :users
-  get 'welcome' => 'homes#welcome', as: "welcome"
+  get 'welcome' => 'homes#welcome', as: 'welcome'
+  get 'dash_board' => 'users#dash_board', as: 'dash_board'
+  get 'withdrawal' => 'users#withdrawal', as: 'withdrawal'
+  delete 'users' => 'users#destroy',as: 'users_destroy'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   def dash_board
   end
 
-  def unsubscribe
+  def withdrawal
   end
 
   def destroy
