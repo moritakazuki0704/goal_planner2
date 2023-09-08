@@ -3,11 +3,6 @@
 <%= form_with model: @user,url: user_session_path do |f| %>
 
   <div class="field">
-    <%= f.label :planner_name %><br />
-    <%= f.text_field :planner_name, autofocus: true %>
-  </div>
-
-  <div class="field">
     <%= f.label :secret_word %><br />
     <%= f.text_field :secret_word, autofocus: true %>
   </div>
