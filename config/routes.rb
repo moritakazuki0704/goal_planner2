@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/dash_board'
+  get 'users/unsubscribe'
   root to: "homes#top"
   devise_for :users
   get 'welcome' => 'homes#welcome', as: "welcome"
